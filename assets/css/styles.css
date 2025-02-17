@@ -1,0 +1,172 @@
+/* Fondo animado oscuro */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1e1e1e, #2a2a2a, #444, #333);
+    background-size: 400% 400%;
+    animation: moveBackground 6s infinite alternate;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Contenedor del login */
+.container {
+    background: rgba(0, 0, 0, 0.7);  /* Fondo más oscuro */
+    backdrop-filter: blur(8px);  /* Efecto de desenfoque */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);  /* Sombra más fuerte */
+    text-align: center;
+    width: 350px;  /* Ajusta el tamaño */
+}
+
+/* Títulos */
+.login-form h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Inputs con efecto */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #777;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    bottom: 35px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Efecto de resplandor en los inputs */
+.input-group input:focus {
+    border-bottom: 2px solid #b3b3b3;
+    box-shadow: 0 0 10px rgba(179, 179, 179, 0.5);
+}
+
+/* Botón animado */
+.btn {
+    background: #444;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.4s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background: #666;
+    transform: scale(1.1); /* Agranda ligeramente al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Enlaces de registro/inicio de sesión */
+p {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las tablas (si se usan después) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+/* Mensajes de error o éxito */
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert-error {
+    background-color: #f44336;
+    color: white;
+}
+
+a {
+    color: #007BFF; /* Azul */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

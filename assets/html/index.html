@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo enlazado -->
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Iniciar sesión</h2>
+            <form action="login.php" method="POST">
+                <div class="input-group">
+                    <input type="text" name="usuario" required>
+                    <label for="usuario">Usuario</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label for="password">Contraseña</label>
+                </div>
+                <button type="submit" class="btn">Iniciar sesión</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p> <!-- Enlace de registro -->
+        </div>
+    </div>
+</body>
+</html>
